@@ -8,7 +8,7 @@
 
     //tạo kết nối
 
-    $con = new mysqli($sv,$u,$p,$dp);
+    $con = new mysqli($sv,$u,$p,$db);
 
     //kiểm tra kết nối
     if ($con->connect_error){
@@ -25,7 +25,7 @@
             .$row["fullname"]."<br/>";
         }
     }else{
-        echo "Khong co du lieu"
+        echo "Khong co du lieu";
     }
     $con->close();
 ?>
