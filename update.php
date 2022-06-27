@@ -14,8 +14,8 @@
     if ($con->connect_error){
         die("Loi ket noi ".$con->connect_error);
     }
-    $namedatabase = "UserDemo1"
-    $sql = "UPDATE $namedatabase SET fullname = 'ABC Van ABC' WHERE id = 2";
+    $namedatabase = "UserDemo1";
+    $sql = "UPDATE $namedatabase SET fullname = 'ABC Van ABC' WHERE id = 1";
     //đọc dữ liệu từ csdl
     if ($con->query($sql)===TRUE)
     {

@@ -14,16 +14,17 @@
     if ($con->connect_error){
         die("Loi ket noi ".$con->connect_error);
     }
-    $namedatabase = "UserDemo1"
+    $namedatabase = "UserDemo1";
     $sql = "SELECT * FROM  ${namedatabase}";
     //đọc dữ liệu từ csdl
     $result = $conn->query($sql);
 
     if ($result->num_rows>0){
-        while ($row = $result->fetch_assoc()){//đọc từng dòng
-            echo "id: "+row["id"]." - fullname: "
-            .$row["fullname"]."<br/>";
-        }
+//         while ($row = $result->fetch_assoc()){//đọc từng dòng
+//             echo "id: "+row["id"]." - fullname: "
+//             .$row["fullname"]."<br/>";
+//         }
+        echo json_encode($result);
     }else{
         echo "Khong co du lieu";
     }
