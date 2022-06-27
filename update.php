@@ -8,7 +8,7 @@
 
     //tạo kết nối
 
-    $con = new mysqli($sv,$u,$p,$dp);
+    $con = new mysqli($sv,$u,$p,$db);
 
     //kiểm tra kết nối
     if ($con->connect_error){
@@ -19,10 +19,10 @@
     //đọc dữ liệu từ csdl
     if ($con->query($sql)===TRUE)
     {
-        echo "da update xong"
+        echo "da update xong";
     }
     else{
-        echo "Loi ".$con->error
+        echo "Loi ".$con->error;
     }
     $con->close();
 ?>

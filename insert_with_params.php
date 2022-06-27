@@ -8,12 +8,12 @@
 
     //tạo kết nối
     //cú pháp link?cakjc=asjcna&nca=caksn
-    $con = new mysqli($sv,$u,$p,$dp);
+    $con = new mysqli($sv,$u,$p,$db);
 
     //kiểm tra kết nối
     if ($con->connect_error){
         die("Loi ket noi ".$con->connect_error);
-    }insert_with_params.php
+    }
 
     // truyền dữ liệu vào API
     if(isset($_GET['fullname']&&$_GET['username']&&$_GET['password'])){
@@ -22,11 +22,10 @@
         $password = $_GET['password']
         $namedatabase = "UserDemo1"
 
-        $sql = "INSERT INTO ${namedatabase}(fullname, username, password)"
-        VALUES('$fullname', '$username','$password');
+        $sql = "INSERT INTO UserDemo1 VALUES(0,'$fullname', '$username','$password')";
 
         if ($con->query($sql)==true){
-            echo "ban ghi moi da dc them"
+            echo "ban ghi moi da dc them";
         }else{
             echo "Loi ".con->error;
         }
