@@ -16,7 +16,7 @@
         die("Loi ket noi ".$con->connect_error);
     }
 //     $namedatabase = "UserDemo1"
-    $sql = "INSERT INTO UserDemo1 VALUES ('Ngo Minh Quan', 'Quannm','18092002') ";
+    $sql = "INSERT INTO UserDemo1 VALUES (0,'Ngo Minh Quan', 'Quannm','18092002') ";
 
     if ($con->query($sql)==true){
         echo "ban ghi moi da dc them";
