@@ -15,8 +15,8 @@
     if ($con->connect_error){
         die("Loi ket noi ".$con->connect_error);
     }
-    $namedatabase = "UserDemo1"
-    $sql = "INSERT INTO ${namedatabase}(fullname, username, password)"
+//     $namedatabase = "UserDemo1"
+    $sql = "INSERT INTO UserDemo1(fullname, username, password)"
 
     VALUES('Ngo Minh Quan', 'Quannm','18092002');
 
