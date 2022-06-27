@@ -16,7 +16,7 @@
     }
 
     // truyền dữ liệu vào API
-    if(isset($_GET['fullname']&&$_GET['username']&&$_GET['password'])){
+    if(isset($_GET['fullname'])&&isset($_GET['username'])&&isset($_GET['password'])){
         $fullname = $_GET['fullname']// nhận lien $_GET['truong1'] làm giá trị
         $username = $_GET['username']
         $password = $_GET['password']
