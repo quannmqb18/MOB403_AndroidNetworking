@@ -16,8 +16,8 @@
     }
 
     // truyền dữ liệu vào API
-    if(isset($_GET['fullname'])&&isset($_GET['username'])&&isset($_GET['password']))
-    {
+//     if(isset($_GET['fullname'])&&isset($_GET['username'])&&isset($_GET['password']))
+//     {
         $FullName = $_GET['fullname']// nhận lien $_GET['truong1'] làm giá trị
         $Username = $_GET['username']
         $Password = $_GET['password']
@@ -30,9 +30,9 @@
         }else{
             echo "Loi ".con->error;
         }
-    }else{
-        echo "Loi get method".con->error;
-    }
+//     }else{
+//         echo "Loi get method".con->error;
+//     }
 
     
     $con->close();
