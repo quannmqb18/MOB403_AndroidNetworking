@@ -18,7 +18,7 @@
     $namedatabase = "UserDemo1"
     $sql = "INSERT INTO ${namedatabase}(fullname, username, password)"
 
-    VALUES('${fullname}', '$username','$password');
+    VALUES('Ngo Minh Quan', 'Quannm','18092002');
 
     if ($con->query($sql)==true){
         echo "ban ghi moi da dc them"
