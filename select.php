@@ -21,11 +21,13 @@
     $result = $con->query($sql);
     if($result->num_rows >0)//neu so dong >0
     {
+    $mArray = array();
         while($row = $result->fetch_assoc())//doc tung dong
         {
             echo "id: ".$row["id"]." - FirstName: ".$row["username"]."<br>";
+            array_push($mArray,$row))
         }
-        echo json_encode($result);
+        echo json_encode($mArray);
     }
     else
     {
