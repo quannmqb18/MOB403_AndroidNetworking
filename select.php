@@ -17,15 +17,18 @@
     $namedatabase = "UserDemo1";
     $sql = "SELECT * FROM  UserDemo1";
     //đọc dữ liệu từ csdl
-    $result = $conn->query($sql);
 
-    if ($result->num_rows>0){
-//         while ($row = $result->fetch_assoc()){//đọc từng dòng
-//             echo "id: "+row["id"]." - fullname: "
-//             .$row["fullname"]."<br/>";
-//         }
+    $result = $con->query($sql);
+    if($result->num_rows >0)//neu so dong >0
+    {
+        while($row = $result->fetch_assoc())//doc tung dong
+        {
+            echo "id: "+$row["id"]." - FirstName: ".$row["username"]."<br>";
+        }
         echo json_encode($result);
-    }else{
+    }
+    else
+    {
         echo "Khong co du lieu";
     }
     $con->close();
