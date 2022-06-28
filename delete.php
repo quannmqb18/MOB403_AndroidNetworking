@@ -11,17 +11,17 @@
 
     //kiểm tra kết nối
     if ($con->connect_error){
-        die("Loi ket noi ".$con->connect_error);
+        die("Lỗi kết nối".$con->connect_error);
     }
     $namedatabase = "UserDemo1";
     $sql = "DELETE FROM ${namedatabase} WHERE id = 1";
     //đọc dữ liệu từ csdl
     if ($con->query($sql)===TRUE)
     {
-        echo "da xoa xong";
+        echo "Đã xóa thành công";
     }
     else{
-        echo "Loi ".$con->error;
+        echo "Lỗi xóa ".$con->error;
     }
     $con->close();
 ?>
