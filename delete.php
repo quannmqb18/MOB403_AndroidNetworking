@@ -14,7 +14,7 @@
         die("Lỗi kết nối".$con->connect_error);
     }
     $namedatabase = "UserDemo1";
-    $sql = "DELETE FROM ${namedatabase} WHERE id = 1";
+    $sql = "DELETE FROM ${namedatabase} WHERE id = 10";
     //đọc dữ liệu từ csdl
     if ($con->query($sql)===TRUE)
     {

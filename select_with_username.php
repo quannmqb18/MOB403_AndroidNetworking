@@ -17,7 +17,7 @@
     if (isset($_GET['username'])){
         $namedatabase = "UserDemo1";
         $username = $_GET['username'];
-        $sql = "SELECT * FROM $namedatabase WHERE username = $username";
+        $sql = "SELECT * FROM $namedatabase WHERE 'username' = $username";
         //đọc dữ liệu từ csdl
 
         $result = $con->query($sql);

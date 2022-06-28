@@ -17,7 +17,7 @@
     {
         $namedatabase = "UserDemo1";
         $username = $_GET['username'];// nhận lien $_GET['truong1'] làm giá trị
-        $sql = "DELETE FROM ${namedatabase} WHERE username = $username";
+        $sql = "DELETE FROM ${namedatabase} WHERE 'username' = $username";
         if ($con->query($sql)==true){
             echo "Đã xóa thành công";
         }else{
