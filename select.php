@@ -15,7 +15,7 @@
         die("Loi ket noi ".$con->connect_error);
     }
     $namedatabase = "UserDemo1";
-    $sql = "SELECT * FROM  ${namedatabase}";
+    $sql = "SELECT * FROM  UserDemo1";
     //đọc dữ liệu từ csdl
     $result = $conn->query($sql);
 
