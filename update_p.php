@@ -21,8 +21,8 @@
         $fullname = $_GET['fullname'];// nhận lien $_GET['truong1'] làm giá trị
 
         $sql = "UPDATE $namedatabase
-                        SET 'fullname' = $fullname
-                        WHERE 'username' = $username";
+                        SET fullname = '$fullname'
+                        WHERE username = '$username'";
         if ($con->query($sql)==true){
             echo "Đã update";
         }else{
