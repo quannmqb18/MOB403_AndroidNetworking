@@ -24,7 +24,7 @@
     $mArray = array();
         while($row = $result->fetch_assoc())//doc tung dong
         {
-            echo "id: ".$row["id"]." - FirstName: ".$row["username"]."<br>";
+//             echo "id: ".$row["id"]." - FirstName: ".$row["username"]."<br>";
             array_push($mArray,$row);
         }
         echo json_encode($mArray);
