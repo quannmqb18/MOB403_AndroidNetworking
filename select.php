@@ -23,7 +23,7 @@
     {
         while($row = $result->fetch_assoc())//doc tung dong
         {
-            echo "id: "+$row["id"]." - FirstName: ".$row["username"]."<br>";
+            echo "id: ".$row["id"]." - FirstName: ".$row["username"]."<br>";
         }
         echo json_encode($result);
     }
